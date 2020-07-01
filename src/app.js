@@ -23,6 +23,7 @@ app.set("views", viewsPath);
 hbs.registerPartials(partialsPath);
 //Handling form data
 app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 //http request logger
 app.use(volleyball);
@@ -43,14 +44,13 @@ app.get("", (req, res) => {
 
 app.get("/:shortUrl", async (req, res) => {
   const urlCase = await urlModel.findOne({ short: req.params.shortUrl });
-  if (urlCase == null){
-    res.sendStatus(404);
-  } else{
+  if (urlCase == null) {
+    res.status(404).send("Yönlendirme bulunamadı");
+  } else {
     urlCase.clicks++;
     await urlCase.save();
     res.redirect(urlCase.url);
   }
-  
 });
 
 app.listen(PORT, () => {

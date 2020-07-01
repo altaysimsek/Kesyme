@@ -5,14 +5,20 @@
 </p>
 <p align="center">It's a kesy url shortener</p>
 
+---
+
 **To-Do List**
     
 Frontend :
 - [ ] Siteyi tanıtan cardların hazırlanması.
 - [ ] Login register modallerinin hazırlanması.
-- [ ] Kullanıcıya kısa url'nin geri dönmesi.
-
+- [x] Kullanıcıya kısa url'nin geri dönmesi.
+  - [ ] Kullanıcaya hataların gösterilmesi
 
 Backend : 
-- [x] Boş veya yanlış link gönderilmesi durumu.
+- [ ] Boş veya yanlış link gönderilmesi durumu.
+- [ ] Login register sisteminin hazırlanması 
+  - [ ] parolanın şifrelenmesi
+    - [ ] parolanın değiştiğinde şifrelenmesi
+- [ ] Şifremi unuttum ? 
 

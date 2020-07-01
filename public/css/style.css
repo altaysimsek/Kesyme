@@ -10,8 +10,8 @@ body{
     background-image: url('../image/background.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+    background-size: auto;
+    
 }
 
 
@@ -31,6 +31,7 @@ h1, h2, h3, h4, h5, h6{
     font-size: 14px;
     color:#21b951;
 }
+
 .navbar-color{
     color:#1F1F1F;
     background-color: transparent;   
@@ -145,5 +146,40 @@ h1, h2, h3, h4, h5, h6{
     letter-spacing: .5px;
     color:#bdbdbd;
 }
+#linked button{
+    margin:0;
+	border:0;
+    padding:3px;
+    width: auto;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+    background:none;
+    color: #808080;
+}
+#linked button{
+    outline: none;
+}
+#linked button:hover{
+    color: #383838
+}
+#linked #cboard{
+    font-size: 36px;
+}
+#ownLink{
+    font-size: 34px;
+    font-weight: 300;
+    color:#9c9c9c;
+    text-decoration: none;
+    
+}
+#ownLink:hover{
+    
+    color:#21b951;
+    text-decoration: none;
+}
 
+a:hover{
+    text-decoration: none;
+}
 

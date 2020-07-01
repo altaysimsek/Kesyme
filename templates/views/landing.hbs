@@ -11,6 +11,10 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <script src="/css/styles/font-awesome.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
     <title>Kesy | URL Shortener</title>
 </head>
 
@@ -18,7 +22,7 @@
     <nav class="navbar navbar-expand-lg navbar-color">
         <div class="container p-2">
             <a class="navbar-brand" href="/"><img src="./image/kesylogo.png" class="d-inline-block align-top" alt=""
-                    loading="lazy"></a>
+                    ></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,7 +48,7 @@
         </div>
     </nav>
 
-    <div>
+    <div id="shorterBox">
         <div class="mt-5 container text-center">
             <div class="introduce">
                 <h2>Linkleri kısalt !</h2>
@@ -52,22 +56,36 @@
             </div>
             <div class="shorter text-center mx-auto p-auto">
                 <div class="searchbox p-1">
-                    <form action="/short" method="POST">
-                        <input type="text" name="url" placeholder="Paste your link" class="mr-auto">
-                        <button type="submit" class="text-center"><i class="fas fa-arrow-circle-right"></i></button>
-                    </form>
+                    
+                        <input type="text" id="conbiLink"name="url" placeholder="Paste your link" class="mr-auto">
+                        <button type="submit" id="conbiBtn"class="text-center"><i class="fas fa-arrow-circle-right"></i></button>
+                    
                 </div>
-                <p class="mt-3">shorter is better right ? ohh nevermind. 😏</p>
+                <p class="mt-3">daha kısa daha iyi değil mi ? 😏</p>
 
             </div>
 
         </div>
     </div>
+    <div id="linked" style="height: 189px"class="container mt-5  text-center">
+        <div class=" d-flex flex-row justify-content-center align-items-center text-center">
+            
+                <a id="owdLink"href="/">
+                    <h2 id="ownLink" class="nav-linkk my-auto mr-3 ">this is your link </h2>
+                </a>
+                <button class="text-center clipboard" data-clipboard-target="#ownLink"><i class="far fa-clipboard" data-clipboard-target="#ownLink" id="cboard"></i></button>
+        </div>
+        <button id="getBack"class="mt-3">
+            <p><i class="fas fa-backward mr-2"></i>Get back </p>
+        </button>
+    </div>
+    
 
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -77,6 +95,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 
 </html>
