@@ -1,13 +1,9 @@
 const mongoose = require("mongoose");
-const config = require('./config.js')
 
 
-let connectionURL = "";
-if(config.local){
-  connectionURL = `mongodb://${config.dbUri}:${config.dbPort}/${config.dbName}`;
-}else{
-  connectionURL = `mongodb://${config.dbName}:${config.dbPass}@${config.dbUri}:${config.dbPort}/${config.dbName}`;
-}
+
+let connectionURL = process.env.MONGOLAB_URI;
+
 
 
 try {
