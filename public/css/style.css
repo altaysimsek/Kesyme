@@ -1,8 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 *{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    
+    
 }
+body{
+    background-color: #f1f2f4;
+    background-image: url('../image/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
 
 h1, h2, h3, h4, h5, h6{
     font-weight: bold;
 }
+.nav-item{
+    font-size: 14px;
+}
+.nav-link{
+    font-size: 14px;
+    color:#9c9c9c;
+    transition: ease .18s;
+}
+.nav-link:hover{
+    font-size: 14px;
+    color:#21b951;
+}
+.navbar-color{
+    color:#1F1F1F;
+    background-color: transparent;   
+}
+.collapse{
+    background-color: transparent;
+}
+.navbar-brand{
+    font-size: 22px;
+    color:#1F1F1F; 
+}
+.navbar-brand:hover{
+    
+    color:#1F1F1F; 
+}
+.navbar, .navbar-expand-lg{
+    background-color: transparent;
+}
+
+.navbar-color .btn-success{
+    background-color: #21b951;
+    border-color: #21b951;
+    transition: ease .22s;
+}
+.navbar-color .btn-success:hover{
+    background-color: #21b951;
+    border-color: #21b951;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 8px #21b951;
+
+}
+.container .introduce{
+    margin-bottom: 15px;
+}
+.container .introduce p{
+    color:#bdbdbd;
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: .5px;
+}
+.container .introduce h2{
+    color:#575757;
+    letter-spacing: 1px;
+}
+.container .shorter{
+    width: 65%;
+}
+.container .shorter .searchbox{
+    height: 50px;
+    border-radius: 8px;
+    transition: ease .18s;
+    width: 100%;
+    background-color: white;
+}
+.container .shorter .searchbox:hover{
+    box-shadow: 0px 0px 8px #cccccc;
+}
+.container .shorter .searchbox:focus{
+    box-shadow: 0px 0px 8px #cccccc;
+}
+
+.container .shorter .searchbox input{
+    width: 80%;
+    margin:0;
+    border:0;
+    font-weight: 300;
+    color: #575757;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+}
+.container .shorter .searchbox input:focus{
+    outline: 0;
+}
+
+.container .shorter .searchbox button{
+    margin:0;
+	border:0;
+    padding:3px;
+    width: auto;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+}
+
+.navbar .container{
+    background-color: transparent;
+}
+.container .shorter .searchbox button i{
+    font-size: 32px;
+    background-color: transparent;
+    transition: ease .16s;
+    color:#575757;
+}
+.container .shorter .searchbox button i:hover{
+    
+    color:#21b951;
+    
+}
+.container .shorter .searchbox button i:active{
+    
+    color:#157e36;
+    
+}
+.container .shorter .searchbox button:focus{
+    outline: 0;
+}
+.shorter p{
+    font-weight: lighter;
+    letter-spacing: .5px;
+    color:#bdbdbd;
+}
+
+

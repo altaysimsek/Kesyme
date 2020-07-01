@@ -9,91 +9,62 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Boilerplate</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/css/styles/font-awesome.js" crossorigin="anonymous"></script>
+    <title>Kesy | URL Shortener</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand">Boi</a>
+    <nav class="navbar navbar-expand-lg navbar-color">
+        <div class="container p-2">
+            <a class="navbar-brand" href="/"><img src="./image/kesylogo.png" class="d-inline-block align-top" alt=""
+                    loading="lazy"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <form class="form-inline">
-            <button type="button" class="btn btn-outline-light mr-3 my-2" data-toggle="modal"
-                data-target="#registerModal">Register</button>
-            <button type="button" class="btn btn-outline-light my-2" data-toggle="modal"
-                data-target="#loginModal">Log-in</button>
-        </form>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="/">Blog <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="/">Docs <span class="sr-only">(current)</span></a>
+                    </li>
+
+                </ul>
+                <div class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-success p-auto my-2 my-sm-0" type="submit">Get Started</button>
+                </div>
+            </div>
+        </div>
     </nav>
 
-    <!-- registerModal -->
-    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="registerModalLabel">Register</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Username</label>
-                            <input type="text" class="form-control" name="username" id="registerUsername">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" name="email" id="registerEmail"
-                                aria-describedby="emailHelp">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                                else.</small>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" name="password" id="registerPassword" class="form-control"
-                                id="exampleInputPassword1">
-                        </div>
-                        
-                        <button type="submit" class="btn btn-dark btn-block">Register</button>
+    <div>
+        <div class="mt-5 container text-center">
+            <div class="introduce">
+                <h2>Linkleri kısalt !</h2>
+                <p>Uup uzun linklerini burada kısaltabilirsin.</p>
+            </div>
+            <div class="shorter text-center mx-auto p-auto">
+                <div class="searchbox p-1">
+                    <form action="/short" method="POST">
+                        <input type="text" name="url" placeholder="Paste your link" class="mr-auto">
+                        <button type="submit" class="text-center"><i class="fas fa-arrow-circle-right"></i></button>
                     </form>
                 </div>
+                <p class="mt-3">shorter is better right ? ohh nevermind. 😏</p>
 
             </div>
+
         </div>
     </div>
-    <!-- loginModal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" name="email" id="loginEmail"
-                                aria-describedby="emailHelp">
 
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" name="password" id="loginPassword" class="form-control"
-                                id="exampleInputPassword1">
-                        </div>
-                        
-                        <button type="submit" class="btn btn-dark btn-block">Login</button>
-                    </form>
-                </div>
 
-            </div>
-        </div>
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
