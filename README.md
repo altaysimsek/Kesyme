@@ -7,10 +7,16 @@
 
 ---
 
+Stabil olarak çalışmasada şuan kullanilabilir durumda.
+
 Hata ve eksiklerimi bana söylerseniz çok mutlu olurum 😀
+
 Alt tarafta bir to-do listesi hazırladım böylece yapmaya uğraştığım işleri görebilirsiniz 
   
+```
   Ufak bir not ücretsiz olarak 500 mb 'lik mongodb kullanmaktayım fazla kayıt eklendiğinde sistem kitlenebilir.
+```
+  
 
 
 **Takıldığım Noktalar**
