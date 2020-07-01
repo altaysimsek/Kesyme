@@ -1,6 +1,9 @@
-# kesy.io
-It's a kesy url shortener
-
+<p align="center">
+  <a href="https://github.com/altaysimsek/shortcutIO">
+    <img alt="blazingfastjs" src="./public/image/kesylogo.png" width="150" />
+  </a>
+</p>
+<p align="center">It's a kesy url shortener</p>
 
 **To-Do List**
     
