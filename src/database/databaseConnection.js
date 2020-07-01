@@ -6,7 +6,7 @@ let connectionURL = "";
 if(config.local){
   connectionURL = `mongodb://${config.dbUri}:${config.dbPort}/${config.dbName}`;
 }else{
-  connectionURL = `mongodb://${config.dbUser}:${config.dbPass}@${config.dbUri}:${config.dbPort}/${config.dbName}`;
+  connectionURL = `mongodb://${config.dbName}:${config.dbPass}@${config.dbUri}:${config.dbPort}/${config.dbName}`;
 }
 
 
