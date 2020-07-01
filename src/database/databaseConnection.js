@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const config = require('./config')
+const config = require('../database/config')
 
 
 let connectionURL = "";
