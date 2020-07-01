@@ -14,7 +14,7 @@ Alt tarafta bir to-do listesi hazırladım böylece yapmaya uğraştığım işl
 
 
 **Takıldığım Noktalar**
-
+- Kullanıcı bilgilerini gizli tutabilmek (bcrypt paketi ile parolaları şifleriyorum fakat yinede emin değilim.)
 - shortID paketinin farklı linkler için aynı kodu üretmesi
 
 **To-Do List**
