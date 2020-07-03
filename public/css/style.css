@@ -3,183 +3,92 @@
 *{
     font-family: 'Rubik', sans-serif;
     
-    
 }
 body{
-    background-color: #f1f2f4;
-    background-image: url('../image/background.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
+    font-family: 'Rubik', sans-serif;
+    color:#001240;
     
 }
-
 
 
 h1, h2, h3, h4, h5, h6{
     font-weight: bold;
 }
-.nav-item{
-    font-size: 14px;
-}
-.nav-link{
-    font-size: 14px;
-    color:#9c9c9c;
-    transition: ease .18s;
-}
-.nav-link:hover{
-    font-size: 14px;
-    color:#21b951;
-}
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
-.navbar-color{
-    color:#1F1F1F;
-    background-color: transparent;   
-}
-.collapse{
-    background-color: transparent;
-}
-.navbar-brand{
-    font-size: 22px;
-    color:#1F1F1F; 
-}
-.navbar-brand:hover{
+@media screen and (max-width: 800px) {
+    .flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+.curved {
+    position: relative;
+    background: linear-gradient(to bottom,#0c152e,#101c3d);
     
-    color:#1F1F1F; 
-}
-.navbar, .navbar-expand-lg{
-    background-color: transparent;
+    height: 50vh;
+    border-bottom-left-radius: 50% 25%;
+    border-bottom-right-radius: 50% 25%;
+  }
+
+.curved h2
+{
+  color:#ffffff;
 }
 
-.navbar-color .btn-success{
-    background-color: #21b951;
-    border-color: #21b951;
+.greyBack{
+    background-color: #eeeeee;
+}
+.bdr{
+    border: 4px solid transparent;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.card{
+    box-shadow: 0 22px 24px rgba(49, 51, 57, 0.2);
     transition: ease .22s;
 }
-.navbar-color .btn-success:hover{
-    background-color: #21b951;
-    border-color: #21b951;
-    transform: translateY(-5px);
-    box-shadow: 0px 0px 8px #21b951;
+.card:hover {
+  transform: translateY(-10px);
+}
+.badge-warning{
+  background-color: #ffe883;
+  color:#c0a634;
+  padding: 7px;
+}
+.badge-danger{
+  color:#eca2aa;
+  
+  padding: 7px;
+}
+.card-body p{
+  font-weight: 400;
+  color: #687992;
+  letter-spacing: .12px;
+}
+p{
+  font-weight: 400;
+  color: #687992;
+  letter-spacing: .12px;
+}
+.searchbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+i{font-size: 24px;}
 
+#conbiLink{
+  font-weight: 300;
+  
 }
-.container .introduce{
-    margin-bottom: 15px;
-}
-.container .introduce p{
-    color:#bdbdbd;
-    font-size: 18px;
-    font-weight: lighter;
-    letter-spacing: .5px;
-}
-.container .introduce h2{
-    color:#575757;
-    letter-spacing: 1px;
-}
-.container .shorter{
-    width: 65%;
-}
-.container .shorter .searchbox{
-    height: 50px;
-    border-radius: 8px;
-    transition: ease .18s;
-    width: 100%;
-    background-color: white;
-}
-.container .shorter .searchbox:hover{
-    box-shadow: 0px 0px 8px #cccccc;
-}
-.container .shorter .searchbox:focus{
-    box-shadow: 0px 0px 8px #cccccc;
-}
-
-.container .shorter .searchbox input{
-    width: 80%;
-    margin:0;
-    border:0;
-    font-weight: 300;
-    color: #575757;
-	display:inline-block;
-	vertical-align:middle;
-	white-space:normal;
-	background:none;
-}
-.container .shorter .searchbox input:focus{
-    outline: 0;
-}
-
-.container .shorter .searchbox button{
-    margin:0;
-	border:0;
-    padding:3px;
-    width: auto;
-	display:inline-block;
-	vertical-align:middle;
-	white-space:normal;
-	background:none;
-}
-
-.navbar .container{
-    background-color: transparent;
-}
-.container .shorter .searchbox button i{
-    font-size: 32px;
-    background-color: transparent;
-    transition: ease .16s;
-    color:#575757;
-}
-.container .shorter .searchbox button i:hover{
-    
-    color:#21b951;
-    
-}
-.container .shorter .searchbox button i:active{
-    
-    color:#157e36;
-    
-}
-.container .shorter .searchbox button:focus{
-    outline: 0;
-}
-.shorter p{
-    font-weight: lighter;
-    letter-spacing: .5px;
-    color:#bdbdbd;
-}
-#linked button{
-    margin:0;
-	border:0;
-    padding:3px;
-    width: auto;
-	display:inline-block;
-	vertical-align:middle;
-	white-space:normal;
-    background:none;
-    color: #808080;
-}
-#linked button{
-    outline: none;
-}
-#linked button:hover{
-    color: #383838
-}
-#linked #cboard{
-    font-size: 36px;
-}
-#ownLink{
-    font-size: 34px;
-    font-weight: 300;
-    color:#9c9c9c;
-    text-decoration: none;
-    
-}
-#ownLink:hover{
-    
-    color:#21b951;
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: none;
-}
-
+  

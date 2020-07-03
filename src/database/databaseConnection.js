@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 
 
-let connectionURL = process.env.MONGODB_URI;
+let connectionURL = process.env.MONGODB_URI || "mongodb://localhost:27017/kesyBase";
 
 
 
@@ -13,7 +13,7 @@ try {
     useUnifiedTopology: true,
     useFindAndModify: false,
   });
-  console.log(`✅ - ${config.dbName} database bağlantısı başarılı.`);
+  console.log(`✅ - database bağlantısı başarılı.`);
 } catch (error) {
-  console.log("💢 - Veritabanına bağlanırken bir hata meydana geldi.");
+  console.log("💢 - Veritabanına bağlanırken bir hata meydana geldi : "+error.message);
 }

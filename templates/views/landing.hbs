@@ -11,81 +11,150 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <script src="/css/styles/font-awesome.js" crossorigin="anonymous"></script>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <title>Kesy | URL Shortener</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-color">
-        <div class="container p-2">
-            <a class="navbar-brand" href="/"><img src="./image/kesylogo.png" class="d-inline-block align-top" alt=""
-                    ></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <section class="curved">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container p-2">
+                <a class="navbar-brand" href="/"><img src="./image/kesylogow.png" class="d-inline-block align-top"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto ">
-                    <li class="nav-item mr-4">
-                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link" href="/">Blog <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link" href="/">Docs <span class="sr-only">(current)</span></a>
-                    </li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item  mr-4">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
 
-                </ul>
-                <div class="form-inline my-2 my-lg-0">
-                    <button class="btn btn-success p-auto my-2 my-sm-0" type="submit">Get Started</button>
+
+                    </ul>
+                    <div class="form-inline my-2 my-lg-0">
+                        <button class="btn btn-primary p-auto my-2 my-sm-0" type="submit">Sign up / Sign in</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+        <div id="shorterBox">
+            <div class="mt-5 container text-center">
+                <div class="introduce">
+                    <h2>Linkleri kısalt !</h2>
+                    <p>Uup uzun linklerini burada kısaltabilirsin.</p>
+                </div>
+                <div class=" text-center mx-auto p-auto">
+                    <div class="searchbox" >
 
-    <div id="shorterBox">
-        <div class="mt-5 container text-center">
-            <div class="introduce">
-                <h2>Linkleri kısalt !</h2>
-                <p>Uup uzun linklerini burada kısaltabilirsin.</p>
-            </div>
-            <div class="shorter text-center mx-auto p-auto">
-                <div class="searchbox p-1">
+                        <input class="input-group-text mr-3"type="text" id="conbiLink" style="width: 60%;" name="url" placeholder="Paste your link" class="mr-auto">
+                        <button class="btn btn-primary btn-large" type="submit" id="conbiBtn" class="text-center"><i class="fas fa-arrow-right"></i></button>
+
+                    </div>
                     
-                        <input type="text" id="conbiLink"name="url" placeholder="Paste your link" class="mr-auto">
-                        <button type="submit" id="conbiBtn"class="text-center"><i class="fas fa-arrow-circle-right"></i></button>
-                    
+
                 </div>
                 <p class="mt-3">daha kısa daha iyi değil mi ? 😏</p>
 
             </div>
-
         </div>
-    </div>
-    <div id="linked" style="height: 189px"class="container mt-5  text-center">
-        <div class=" d-flex flex-row justify-content-center align-items-center text-center">
-            
-                <a id="owdLink"href="/">
+        <div id="linked" style="height: 189px" class="container mt-5  text-center">
+            <div class=" d-flex flex-row justify-content-center align-items-center text-center">
+
+                <a id="owdLink" href="/">
                     <h2 id="ownLink" class="nav-linkk my-auto mr-3 ">this is your link </h2>
                 </a>
-                <button class="text-center clipboard" data-clipboard-target="#ownLink"><i class="far fa-clipboard" data-clipboard-target="#ownLink" id="cboard"></i></button>
+                <button class="text-center clipboard btn btn-primary" data-clipboard-target="#ownLink"><i class="far fa-clipboard"
+                        data-clipboard-target="#ownLink" id="cboard"></i></button>
+            </div>
+            <button class="btn btn-primary mt-5" id="getBack"></i>Geri dön</button>
         </div>
-        <button id="getBack"class="mt-3">
-            <p><i class="fas fa-backward mr-2"></i>Get back </p>
-        </button>
-    </div>
-    
+    </section>
+    <section id="features">
+        <div class="container-fluid d-flex flex-column  my-5">
+            <h2 class="my-4 text-center">Özellikler</h2>
+            <div class="flex">
+                <div id="cardie">
+                    <div class="text-center mb-4">
+                        <img class="" src="./image/short-ico.png" style="height:75px;" alt="">
+                    </div>
+                    <div class="card mb-3 mx-5" style="max-width: 22rem;">
+                        <div class="card-body">
+                            <h4 class="card-title ">Özel kısaltmalar</h4>
+                            <p class="card-text mt-4">Kayıt olun veya üyeliğinize giriş yapın. Daha sonra kısaltmak
+                                istediğiniz link'i istediğiniz şekilde kısaltın.</p>
+                            <span class="badge badge-warning">Henüz kullanılamaz</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="cardie">
+                    <div class="text-center mb-4">
+                        <img class="" src="./image/analaysis-ico.png" style="height:75px;" alt="">
+                    </div>
+                    <div class="card mb-3 mx-5" style="max-width: 22rem;">
+                        <div class="card-body">
+                            <h4 class="card-title">Detaylı bilgiler elde edin</h4>
+                            <p class="card-text mt-4">Kısalttığınız link'in kaç defa ziyaret edildiğini vb. bilgileri
+                                kullanıcı profilinizde görüntüleyin.</p>
+                            <span class="badge badge-warning">Henüz kullanılamaz</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="cardie">
+                    <div class="text-center mb-4">
+                        <img class="" src="./image/fast-ico.png" style="height:75px;" alt="">
+                    </div>
+                    <div class="card mb-3 mx-5" style="max-width: 22rem;">
+                        <div class="card-body">
+                            <h4 class="card-title">Hızlı kullanım</h4>
+                            <p class="card-text mt-4">Kısaltmak istediğiniz link'i hesabınıza giriş yaparak , yeni
+                                üyelik açarak veya anonim olarak kısaltın.
+                            </p>
+                            <span class="badge badge-danger">Hızlıdan da hızlı</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+    </section>
+    <section class="greyBack">
+        <div class="container  py-5">
+            <h2 class="text-center">Katkıda bulun</h2>
+            <div class="row mt-5">
+                <div class="col-7">
+                    <div>
+                        <h3>Github'da katkıda bulun</h3>
+                        <p class="mt-4">Bu projeye katkıda bulunmak ister misin ? Bu projeye destek olarak kendini
+                            bilgilerini pekiştirebilir aynı zaman da benim gelişimime katkı sağlamış olursun şimdiden
+                            yardım desteklerin için teşekkür ederim.</p>
+                        <a href="https://github.com/altaysimsek/shortcutIO"><button class="btn btn-primary mt-5"><i class="fab fa-github"> </i> Github'a git</button></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="bdr" style="width:100%;height:0px;position:relative;padding-bottom:56.485%;"><iframe
+                            src="https://streamable.com/e/6ztnrl" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
 
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -95,7 +164,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/app.js"></script>
 </body>
