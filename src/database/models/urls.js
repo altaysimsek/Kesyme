@@ -25,6 +25,10 @@ const urlSchema = new mongoose.Schema({
   },
   name:{
       type: String
+  },
+  createdTıme:{
+    type:String,
+    default:new Date()
   }
 });
 
