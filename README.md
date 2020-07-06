@@ -26,12 +26,14 @@ Alt tarafta bir to-do listesi hazırladım böylece yapmaya uğraştığım işl
 **To-Do List**
     
 Frontend :
-- [ ] Siteyi tanıtan cardların hazırlanması.
+- [x] Siteyi tanıtan cardların hazırlanması.
 - [ ] Login register modallerinin hazırlanması.
 - [x] Kullanıcıya kısa url'nin geri dönmesi.
   - [ ] Kullanıcaya hataların gösterilmesi
-
+      - [x] Boş veya hatalı bağlantının hatasının gönderilmesi.
+      - [ ] Geçersiz bağlantının hatasının gönderilmesi. 
 Backend : 
+- [ ] Kısaltılan linkleri kısaltıp loop etme durumunun düzeltilmesi.
 - [ ] Boş veya yanlış link gönderilmesi durumu.
 - [ ] Login register sisteminin hazırlanması 
   - [ ] parolanın şifrelenmesi

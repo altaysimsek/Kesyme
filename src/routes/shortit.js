@@ -7,9 +7,9 @@ router.post("", async (req, res) => {
   const urlCase = new urlModel({ url: req.body.url });
   try {
     await urlCase.save();
-    res.send({short:urlCase.short});
+    res.status(200).send({short:urlCase.short});
   } catch (error) {
-      
+      res.status(404).send()
   }
 });
 

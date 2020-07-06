@@ -40,20 +40,35 @@ new ClipboardJS('.clipboard');
 $("#linked").hide()
 
 $("#conbiBtn").click(async function () {
-  const { short } = await postData("/short", {
-    url: $("#conbiLink").val(),
-  })
-  animateCSS("#shorterBox","fadeOut").then((message) => {
-    $("#shorterBox").hide()
-    $("#owdLink").attr("href",window.location.href + short)
-    $("#ownLink").text(window.location.href + short)
-    $("#linked").show()
-
-    animateCSS("#linked","fadeIn").then((message) => {
-      
-      
+  
+  if($("#conbiLink").val().trim() == "" || validate({website:`${$("#conbiLink").val()}` }, {website: {url: true}}) != undefined){
+    $("#alerWarn").show()
+    animateCSS("#alerWarn","fadeIn").then((message) => {
+      animateCSS("#alerWarn","fadeOut").then((message) => {
+        setTimeout
+        $("#alerWarn").hide()
+      })
+        
     })
-  })
+    
+  }else{
+    const { short } = await postData("/short", {
+      url: $("#conbiLink").val(),
+    })
+    animateCSS("#shorterBox","fadeOut").then((message) => {
+      $("#shorterBox").hide()
+      $("#owdLink").attr("href",window.location.href + short)
+      $("#ownLink").text(window.location.href + short)
+      $("#linked").show()
+  
+      animateCSS("#linked","fadeIn").then((message) => {
+        
+        
+      })
+    })
+  }
+  
+  
 });
 
 $("#getBack").click(async function () {
