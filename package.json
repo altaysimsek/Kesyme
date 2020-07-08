@@ -5,13 +5,15 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon src/app.js -e js,hbs",
-    "start" : "node src/app.js"
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "Altay Simsek",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^7.4.0",
     "nodemon": "^2.0.4"
+    
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
@@ -20,6 +22,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.20",
     "shortid": "^2.2.15",
+    "validate.js": "^0.13.1",
     "volleyball": "^1.5.1"
   }
 }

@@ -33,26 +33,34 @@ const PORT = process.env.PORT || 3000;
 
 //Routes
 const shoritRoute = require("./routes/shortit");
+const authRoute = require("./routes/auth");
 app.use("/short", shoritRoute);
+app.use( authRoute);
 
 //THE APP
 const urlModel = require("./database/models/urls");
 
 app.get("", (req, res) => {
-  res.render("landing");
+	res.render("landing");
 });
 
 app.get("/:shortUrl", async (req, res) => {
-  const urlCase = await urlModel.findOne({ short: req.params.shortUrl });
-  if (urlCase == null) {
-    res.status(404).send("Yönlendirme bulunamadı");
-  } else {
-    urlCase.clicks++;
-    await urlCase.save();
-    res.redirect(urlCase.url);
-  }
+	const urlCase = await urlModel.findOne({ short: req.params.shortUrl });
+	if (urlCase == null) {
+		res.render('404')
+	} else {
+		urlCase.clicks++;
+		await urlCase.save();
+		res.redirect(urlCase.url);
+	}
 });
 
+app.get("*", (req, res) => {
+	res.render('404')
+})
+
+
+
 app.listen(PORT, () => {
-  console.log(`✅ - Server is up on port ${PORT}`);
+	console.log(`✅ - Server is up on port ${PORT}`);
 });

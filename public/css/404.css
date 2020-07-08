@@ -1,0 +1,9 @@
+
+.boxContainer{
+    height: 60vh;
+    background: linear-gradient(to bottom,#0c152e,#101c3d);
+}
+h1{
+    font-size: 144px;
+    color:white;
+}

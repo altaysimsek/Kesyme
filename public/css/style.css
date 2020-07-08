@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6{
     position: relative;
     background: linear-gradient(to bottom,#0c152e,#101c3d);
     
-    height: 50vh;
+    height: 100%;
     border-bottom-left-radius: 50% 25%;
     border-bottom-right-radius: 50% 25%;
   }
@@ -94,5 +94,8 @@ i{font-size: 24px;}
 #conbiLink{
   font-weight: 300;
   
+}
+#log-res{
+  min-height: 100vh;
 }
   
