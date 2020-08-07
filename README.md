@@ -27,16 +27,21 @@ Alt tarafta bir to-do listesi hazırladım böylece yapmaya uğraştığım işl
     
 Frontend :
 - [x] Siteyi tanıtan cardların hazırlanması.
-- [ ] Login register modallerinin hazırlanması.
+- [x] Login register modallerinin hazırlanması.
 - [x] Kullanıcıya kısa url'nin geri dönmesi.
   - [ ] Kullanıcaya hataların gösterilmesi
       - [x] Boş veya hatalı bağlantının hatasının gönderilmesi.
       - [ ] Geçersiz bağlantının hatasının gönderilmesi. 
+- [ ] Register bölümünde hataların kullanıcıya gösterilmesi
+  - [x] Formu boş bırakma veya hatalı doldurma 
+  - [ ] Benzer kullanıcı adı veya email olması halinde hatanın gösterilmesi
 Backend : 
+
 - [ ] Kısaltılan linkleri kısaltıp loop etme durumunun düzeltilmesi.
 - [ ] Boş veya yanlış link gönderilmesi durumu.
 - [ ] Login register sisteminin hazırlanması 
-  - [ ] parolanın şifrelenmesi
-    - [ ] parolanın değiştiğinde şifrelenmesi
-- [ ] Şifremi unuttum ? 
+  - [x] parolanın şifrelenmesi
+    - [x] parolanın değiştiğinde şifrelenmesi
+- [ ] Şifremi unuttum ?
+- [ ] /dashboard sayfalarında token doğrulaması için middleware hazırlanması
 

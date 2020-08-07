@@ -1,5 +1,11 @@
 
 .boxContainer{
-    height: 60vh;
+    
     background: linear-gradient(to bottom,#0c152e,#101c3d);
+    color:white
 }
+
+.card h4{
+    color:#101c3d;
+}
+

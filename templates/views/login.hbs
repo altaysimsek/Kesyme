@@ -24,22 +24,19 @@
                 <div class="card" >
                     <div class="card-body">
                         <h1>Giriş Yap</h1>
-                        <form>
+                        <form action="/login" method="POST">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email Adresi</label>
-                                <input type="email" v-model="user.username" class="form-control" id="exampleInputEmail1"
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp">
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with
                                     anyone else.</small>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Parola</label>
-                                <input v-model="password" type="password" class="form-control" id="exampleInputPassword1">
+                                <input name="password" type="password" class="form-control" id="exampleInputPassword1">
                             </div>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>
+
                             <div class="form-group">
                                 <p>Henüz bir üyeliğin yoksa oluşturmak için <a href="/register" >tıkla.</a></p>
                             </div>
